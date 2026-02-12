@@ -1,0 +1,29 @@
+{
+  "name": "nxsploit",
+  "version": "1.0.0",
+  "description": "One-click web hacker",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "nodemon backend/server.js",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "puppeteer": "^22.0.0",
+    "axios": "^1.6.0",
+    "mysql2": "^3.9.0",
+    "uuid": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "concurrently": "^8.2.0"
+  }
+}
