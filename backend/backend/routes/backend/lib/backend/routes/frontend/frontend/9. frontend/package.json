@@ -1,0 +1,1 @@
+{"name":"kauanrepo153ag","version":"1.0.0","scripts":{"build":"cd frontend && npm install && npm run build","start":"node app.js"},"dependencies":{"express":"^4.19.0","cors":"^2.8.5","dotenv":"^16.4.0","puppeteer":"^22.0.0"}}
